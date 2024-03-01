@@ -21,7 +21,7 @@ COPY --from=build /app/target/docker-java-app-example.jar .
 RUN apk update && apk add bash
 
 # Make port 8081 available to the world outside this container
-EXPOSE 8081
+EXPOSE 8080
 
 # Run jar file when the container launches
 CMD ["java", "-jar", "docker-java-app-example.jar"]
